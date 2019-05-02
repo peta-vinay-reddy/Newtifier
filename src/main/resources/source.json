@@ -1,0 +1,14 @@
+{
+	"rssFeeds": [
+		{
+			"url": "http://www.espncricinfo.com/rss/content/story/feeds/0.xml",
+			"parser": "ESPN_RSS_FEED_PARSER",
+			"source": "ESPN Cricinfo"
+		},
+		{
+			"url": "https://sports.ndtv.com/rss/cricket",
+			"parser": "NDTV_RSS_FEED_PARSER",
+			"source": "NDTV"
+		}
+	]
+}
