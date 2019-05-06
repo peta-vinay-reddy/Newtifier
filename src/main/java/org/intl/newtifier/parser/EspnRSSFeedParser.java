@@ -19,8 +19,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.intl.newtifier.model.Item;
 import org.intl.newtifier.model.RSSFeed;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
+@Primary
+@Component
 public class EspnRSSFeedParser implements RSSFeedParser {
 
 	@Override

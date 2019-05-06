@@ -2,6 +2,8 @@ package org.intl.newtifier.model;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Item {
 
 	private String title;
@@ -9,6 +11,8 @@ public class Item {
 	private String link;
 	private String coverImage;
 	private String source;
+	private String[] keywords;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "IST")
 	private Date date;
 
 	public String getTitle() {
@@ -17,6 +21,14 @@ public class Item {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String[] getKeywords() {
+		return keywords;
+	}
+
+	public void setKeywords(String[] keywords) {
+		this.keywords = keywords;
 	}
 
 	public String getDescription() {
